@@ -7,12 +7,12 @@ from matplotlib.figure import Figure
 
 # --- CONFIGURAÇÃO DO POSTGRESQL ---
 DB_CONFIG = {
-    "dbname": os.environ.get("PGDATABASE", "sistema_estoque"),
-    "user": os.environ.get("PGUSER", "postgres"),
-    "password": os.environ.get("PGPASSWORD", "SUA SENHA AQUI"),
+    "dbname": os.environ["PGDATABASE"],
+    "user": os.environ["PGUSER"],
+    "password": os.environ["PGPASSWORD"],
     "host": os.environ.get("PGHOST", "localhost"),
     "port": os.environ.get("PGPORT", "5432"),
-    "client_encoding": os.environ.get("PGCLIENTENCODING", "WIN1252"),
+}
 }
 
 CATEGORIAS_PADRAO = [
